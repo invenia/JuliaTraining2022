@@ -12,7 +12,7 @@
 # Data Links
 
 1. [NYC Open Dog Data](https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp) -- csv at http://tinyurl.com/dogdata2022
-1. [OWID Emissions Data](https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv) -- csv at https://github.com/owid/co2-data
+1. [OWID Emissions Data](https://github.com/owid/co2-data) -- csv at https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv
 
 
 # Useful general packages

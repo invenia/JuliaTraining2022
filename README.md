@@ -45,7 +45,8 @@
 1. [IJulia](https://github.com/JuliaLang/IJulia.jl)
 1. [Pluto](https://github.com/fonsp/Pluto.jl)
 1. [Julia VSCode Plugin](https://code.visualstudio.com/docs/languages/julia) (not actually a Julia package)
-
+1. [BenchmarkTools](https://github.com/JuliaCI/BenchmarkTools.jl)
+1. [TestEnv](https://github.com/JuliaTesting/TestEnv.jl)
 
 
 ## Other cool libraries / orgs
@@ -56,8 +57,6 @@
 1. [JuliaML](https://github.com/JuliaML)
 1. [Turing](https://turing.ml/stable/)
 1. [SciML](https://sciml.ai/)
-1. [TestEnv](https://github.com/JuliaTesting/TestEnv.jl)
-
 
 # Exercises
 

@@ -59,6 +59,7 @@
 1. [TestEnv](https://github.com/JuliaTesting/TestEnv.jl)
 
 
+# Exercises
 
 ### Plotting 1
 
@@ -81,3 +82,32 @@ For reasability you will likely want to subset to only a few countries of intere
 Tips:
  - line plots use the `plot` function
  - use the `group` keyword argument to group by country to get seperate lines
+
+### Deep Learning 1
+
+Use [Flux](https://github.com/FluxML/Flux.jl) to train a conv net to classify MNIST (maybe
+don't run on the GPU if you don't have one to hand).
+
+Tips:
+ - Use [MLDatasets](https://github.com/JuliaML/MLDatasets.jl) to make getting the data simple
+ - Look at the examples in the model zoo if you're stuck
+
+
+### Deep Learning 2
+
+Julia is a language in which new packages are being developed on a regular basis, so you
+might as well get your hands dirty with a library that is a little more rough around the
+edges than the ones we've seen so far.
+[SimpleChains](https://github.com/PumasAI/SimpleChains.jl) is a new package for training and running smaller neural net architectures
+on the CPU.
+The performance is really quite impressive.
+Use it to train the same model as before on the CPU, but faster.
+
+Tips:
+ - There's a nice LeNet example in the docs which you might want to take inspiration from.
+
+
+### Gaussian Process 1
+
+
+### Gaussian Process 2

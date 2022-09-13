@@ -57,3 +57,27 @@
 1. [Turing](https://turing.ml/stable/)
 1. [SciML](https://sciml.ai/)
 1. [TestEnv](https://github.com/JuliaTesting/TestEnv.jl)
+
+
+
+### Plotting 1
+
+For the year 2019, make a scatter plot on log-log scale,
+where each point is a particular country, 
+the x-axis is the emissisions (`total_ghg`), the y-axis is GDP and it is coloured by population.
+
+Tips:
+ - you can slice dataframes via `df[df.year .== 2019, :]`
+ - the function is `scatter`
+ - coloring is with `zcolor` keyword argument
+
+### Plotting 2
+
+Produce a line plot with 1 line per country,
+showing how their emmissions (`total_ghg`) have changed over time
+
+For reasability you will likely want to subset to only a few countries of interest.
+
+Tips:
+ - line plots use the `plot` function
+ - use the `group` keyword argument to group by country to get seperate lines

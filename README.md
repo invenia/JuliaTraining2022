@@ -60,6 +60,8 @@
 
 # Exercises
 
+## Plotting
+
 ### Plotting 1
 
 For the year 2019, make a scatter plot on log-log scale,
@@ -81,6 +83,8 @@ For reasability you will likely want to subset to only a few countries of intere
 Tips:
  - line plots use the `plot` function
  - use the `group` keyword argument to group by country to get seperate lines
+
+## Deep Learning
 
 ### Deep Learning 1
 
@@ -105,6 +109,7 @@ Use it to train the same model as before on the CPU, but faster.
 Tips:
  - There's a nice LeNet example in the docs which you might want to take inspiration from.
 
+## Gaussian Proccesses
 
 ### Gaussian Process 1
 

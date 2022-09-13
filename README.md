@@ -26,7 +26,7 @@
 
 
 
-## Libraries covered in this talk
+## Libraries covered in the workshop
 
 1. [DataFrames](https://github.com/JuliaData/DataFrames.jl)
 1. [CSV](https://github.com/JuliaData/CSV.jl)
@@ -36,7 +36,7 @@
 
 
 
-## Very Popular Libraries (not covered in this talk)
+## Very Popular Libraries (not covered in the workshop)
 
 1. [Revise](https://github.com/timholy/Revise.jl)
 1. [IJulia](https://github.com/JuliaLang/IJulia.jl)
@@ -55,4 +55,3 @@
 1. [Turing](https://turing.ml/stable/)
 1. [SciML](https://sciml.ai/)
 1. [TestEnv](https://github.com/JuliaTesting/TestEnv.jl)
-1.

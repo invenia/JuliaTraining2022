@@ -109,7 +109,7 @@ Use it to train the same model as before on the CPU, but faster.
 Tips:
  - There's a nice LeNet example in the docs which you might want to take inspiration from.
 
-## Gaussian Proccesses
+## Gaussian Processes
 
 ### Gaussian Processes 1
 

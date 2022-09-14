@@ -111,7 +111,32 @@ Tips:
 
 ## Gaussian Proccesses
 
-### Gaussian Process 1
+### Gaussian Processes 1
+
+This is quite a low-level exercise, that will get you familiar with some more of the generic ML tools in the ecosystem, in particular generic optimisation packages, algorithmic / automatic differentiation, parameter handling packages, and tools for working with Gaussian processes (GPs).
+
+Obtain the (famous) Mauna Loa CO2 data, [(CSV here)](https://scrippsco2.ucsd.edu/assets/data/atmospheric/stations/in_situ_co2/monthly/monthly_in_situ_co2_mlo.csv)
+- plot it
+- handle and missing data etc
+- fit a GP to it by optimising the negative log marginal likelihood of the kernel parameters of some GP of your choosing
+
+We recommend using the [JuliaGaussianProcesses](https://github.com/JuliaGaussianProcesses) ecosystem -- it's quite low-level, but gives you a lot of flexibility.
+You'll need to use AbstractGPs and KernelFunctions for sure.
+We recommend using [Zygote.jl](https://github.com/FluxML/Zygote.jl/) to for automatic differentiation.
+In order to optimise the kernel parameters, we recommend making use of the BFGS implementation in [Optim.jl](), a generic optimisation package.
+You can also use [Optimisers.jl](https://github.com/FluxML/Optimisers.jl) if you prefer to use an optimiser like ADAM.
+You'll probably want to use a package like [ParameterHandling](https://github.com/invenia/ParameterHandling.jl/) to make constraining / handling parameters straightforward.
+
+Tips:
+ - Consider a model which utilises the sum of a kernel with a period of 1 year, and a kernel with a length scale of roughly 10 years. You can probably keep the period of the periodic kernel fixed, but you'll need to optimise the other parameters to get a good fit.
+ - Look at the README of [ParameterHandling.jl](https://github.com/invenia/ParameterHandling.jl) for an example of how to combine the various packages in order to tune the parameters of a GP.
+ - If you're stuck, look at the examples / docs in AbstractGPs or [Stheno.jl](https://github.com/JuliaGaussianProcesses/Stheno.jl) where we solve this exact problem.
 
 
-### Gaussian Process 2
+### Gaussian Processes 2
+
+Utilise [Stheno.jl](https://github.com/JuliaGaussianProcesses/Stheno.jl) to construct an appropriate GP model and decompose the Mauna Loa data into a periodic component and a long-term trend component.
+
+Tips:
+ - You can probably just re-express your model from the last exercise in terms of the sum of a couple of GPs
+ - If you get really stuck, looks at the examples / docs in [Stheno.jl](https://github.com/JuliaGaussianProcesses/Stheno.jl)

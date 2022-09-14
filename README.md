@@ -7,7 +7,22 @@
     1. Really good vscode plugin
     1. Feel free to use vim / sublime / whatever else you prefer
 
+# Creating an Environment
 
+Type `]` to enter the package manager bit of the REPL. Then run
+```julia
+activate .
+```
+to activate an environment at your `pwd`.
+```julia
+add DataFrames, CSV, Plots
+```
+to install these packages.
+Press backspace to exit the package manager, and run
+```julia
+using DataFrames, CSV, Plots
+```
+to load up the packages.
 
 # Data Links
 
